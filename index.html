@@ -1,25 +1,125 @@
-!<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>TCP/IP</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
 
-    <script src="" async defer></script>
+  <body>
+    <header class="header">
+      <img src="./img/logo.png" alt="logo" class="header__logo" />
+      <nav>
+        <ul class="header__menu">
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1>TCP/IP — сетевая модель передачи данных</h1>
+      <section class="main__section">
+        <h2>Протокол TCP/IP</h2>
+        <div class="main__content">
+          <figure class="main__image">
+            <img src="./img/section1.jpg" alt="TCP/IP" />
+            <figcaption>Стек протоколов TCP/IP</figcaption>
+          </figure>
+          <p class="main__text">
+            Для упорядочения обмена данными между компьютерами применяются
+            наборы правил, или протоколы. В настоящее время наиболее широко
+            распространен набор протоколов под общим названием TCP/IP. (Следует
+            помнить, что во многих странах Европы применяется протокол X.25).
+            Основные функции семейства протоколов TCP/IP: электронная почта,
+            передача файлов между компьютерами и удаленный вход в систему.
+          </p>
+        </div>
+      </section>
+      <section class="main__section">
+        <h2>Уровни модели TCP/IP</h2>
+        <div class="main__content">
+          <figure class="main__image">
+            <img src="./img/section2.jpg" alt="уровни модели TCP/IP" />
+            <figcaption>Уровни модели TCP/IP</figcaption>
+          </figure>
+          <p class="main__text">
+            Протокол TCP/IP основан на OSI и так же, как предшественник, имеет
+            несколько уровней, которые и составляют его архитектуру. Всего
+            выделяют 4 уровня – канальный (интерфейсный), межсетевой,
+            транспортный и прикладной.
+          </p>
+        </div>
+      </section>
+      <section class="main__section">
+        <h2>Порты и сокеты – что это и зачем они нужны</h2>
+        <div class="main__content">
+          <figure class="main__image">
+            <img src="./img/section3.jpg" alt="Порты и сокеты" />
+            <figcaption>Порты и сокеты</figcaption>
+          </figure>
+          <p class="main__text">
+            Процессы, работающие на прикладном уровне, «общаются» с
+            транспортным, но они видны ему как «черные ящики» с зашифрованной
+            информацией. Зато он понимает, на какой IP-адрес адресованы данные и
+            через какой порт надо их принимать. Этого достаточно для точного
+            распределения пакетов по сети независимо от месторасположения
+            хостов. Порты с 0 до 1023 зарезервированы операционными системами,
+            остальные, в диапазоне от 1024 до 49151, условно свободны и могут
+            использоваться сторонними приложениями.
+            <br />
+            Комбинация IP-адреса и порта называется сокетом и используется при
+            идентификации компьютера. Если первый критерий уникален для каждого
+            хоста, второй обычно фиксирован для определенного типа приложений.
+            Так, получение электронной почты проходит через 110 порт, передача
+            данных по протоколу FTP – по 21, открытие сайтов – по 80.
+          </p>
+        </div>
+      </section>
+      <section class="main_cards">
+        <h2>Дополнительные источники</h2>
+        <div class="cards__containder">
+          <div class="card">
+            <img src="./img/ibm_logo_icon_170000.png" alt="ibm" />
+            <h3 class="card__heading">IBM</h3>
+            <a
+              href="https://www.ibm.com/docs/ru/aix/7.2?topic=management-transmission-control-protocolinternet-protocol"
+            >
+              Ссылка</a
+            >
+          </div>
+          <div class="card">
+            <img src="img/timeweb_logo.png" alt="Timeweb" />
+            <h3 class="card__heading">Timeweb</h3>
+            <a
+              href="https://timeweb.com/ru/community/articles/chto-takoe-tcp-ip#:~:text=%D0%A3%D1%80%D0%BE%D0%B2%D0%BD%D0%B8%C2%A0%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20TCP/IP"
+            >
+              Ссылка</a
+            >
+          </div>
+          <div class="card">
+            <img src="img/hilen.jpg" alt="Hillel IT Schoo" />
+            <h3 class="card__heading">Hillel IT Schoo</h3>
+            <a
+              href="https://www.youtube.com/watch?v=rLUzYeLdM0k&ab_channel=HillelITSchool"
+            >
+              Ссылка</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="caption">Димухаметова Анастасия Олеговна 201-323 30.11.2021</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@mail.com"
+        />
+      </form>
+    </footer>
   </body>
 </html>
